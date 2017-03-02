@@ -11,7 +11,7 @@ $(document).ready(function() {
         $(monli).click(function() {
             $("#encours").append(monli)
             $('.timer').startTimer()
-            if (".timer" == onComplete()) {
+            if (".timer" == '.timer-done') {
                 alert("yolo")
             }
             console.log($(".timer"));
@@ -20,7 +20,7 @@ $(document).ready(function() {
 
 
     function onComplete() {
-        $(".timer").addClass('jst-timeout');
+        $(".timer").addClass('timer-done');
 
     }
 })
