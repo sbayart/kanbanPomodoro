@@ -61,6 +61,7 @@ h1 {
 }
 .glyphicon-remove-sign {
     margin-left: 10em;
+    cursor: pointer;
 }
 /*#middle:not(.timer) {
     /*display: flex;
