@@ -1,0 +1,45 @@
+
+.container {
+    padding: 0;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+}
+.col-md-9 {
+    padding-right: 0;
+}
+.col-md-3 {
+    padding-left: 0;
+}
+.btn-block {
+    border: 2px solid black;
+    padding: 0.4em 0;
+    border-radius: 0.4em;
+}
+.form-control {
+    border: 2px solid black;
+    padding: 0.2em 0;
+}
+table {
+    width: 100%;
+}
+th {
+    width: 30%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 2em;
+}
+td {
+    height: 5em;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 2em;
+}
+.middle {
+    text-align: center;
+}
+.last {
+    border-bottom: 2px solid black;
+    border-radius: 15%;
+}
