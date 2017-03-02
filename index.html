@@ -26,19 +26,22 @@
             <div class="col-md-4">
                 <h2>A faire</h2>
                 <ul>
-                    <li>Tâche 3</li>
-                    <li>Tâche 4</li>
-                    <li>Tâche 5</li>
+                    <li>Tâche 3 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
+                    <li>Tâche 4 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
+                    <li>Tâche 5 <span class="glyphicon glyphicon-remove-sign" aria-hidden="true"></span></li>
                 </ul>
             </div>
             <div class="col-md-4" id="middle">
+                <img src="static/img/triangle.png" id="first" alt="">
                 <h2>En cours</h2>
-                <div><button type="button" name="button">Début</button></div>
-                <div><button type="button" name="button">Pause</button></div>
+                <div class="timer" data-minutes-left=25></div>
+                <button type="button" name="button" class="btn-lg">Début</button>
+                <button type="button" name="button" class="btn-lg">Pause</button>
             </div>
             <div class="col-md-4">
+                <img src="static/img/triangle.png" id="second" alt="">
                 <h2>Fait</h2>
-                <ul>    
+                <ul>
                     <li>Tâche 1</li>
                     <li>Tâche 2</li>
                     <li>Tâche 6</li>
@@ -48,6 +51,8 @@
     </div>
 <script src="static/external/jquery/dist/jquery.min.js"></script>
 <script src="static/external/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="static/external/jQuery-Simple-Timer/jquery.simple.timer.js">
+</script>
 <script src="static/js/script.js"></script>
 </body>
 </html>

@@ -16,6 +16,7 @@
     "static/external/"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jQuery-Simple-Timer": "jquery-simple-timer#^0.0.5"
   }
 }

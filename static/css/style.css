@@ -31,8 +31,9 @@ h1 {
     flex-direction: column;
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
+    height: 100vh;
 }
-.col-md-4:not(:first-child){
+.col-md-4:not(h2){
     border: 2px solid black;
 
 }
@@ -42,17 +43,70 @@ h1 {
     width: 100%;
     text-align: center;
 }
+#first {
+    margin-left: -0.3em;
+    width: 55px;
+    height: 55px;
+    position: absolute;
+}
 .col-md-4 li {
     list-style: none;
     padding: 2em;
 }
-#middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
+.col-md-4 li:hover {
+    background-color: silver;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    margin-right: 3em;
 }
-#middle div {
-    padding: 2em;
+.glyphicon-remove-sign {
+    margin-left: 10em;
+}
+/*#middle:not(.timer) {
+    /*display: flex;
+    flex-direction: column;*/
+    /*align-items: center;*/
+    /*flex-wrap: nowrap;*/
+/*}*/
+.timer, .timer-done, .timer-loop {
+    display: flex;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    /*padding: 10px;*/
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 0.5em;
+    width: 70%;
+    margin: 1em 1.9em;
+ }
 
+ /*// These are the default CSS classes
+ // used by this plugin. Use these values
+ // for a basic style to get started.*/
+ .jst-hours {
+   float: left;
+ }
+ .jst-minutes {
+   float: left;
+ }
+ .jst-seconds {
+   float: left;
+ }
+ .jst-clearDiv {
+   clear: both;
+ }
+ .jst-timeout {
+   color: red;
+ }
+#middle button {
+    margin: 2em;
+    border: 2px solid black;
+    border-radius: 0.5em;
+}
+#second {
+    margin-left: -0.3em;
+    width: 55px;
+    height: 55px;
+    position: absolute;
 }
