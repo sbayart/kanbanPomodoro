@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,13 @@
     <link href="static/css/style.css" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="container">
         <h1>Kanban Pomodoro</h1>
         <div class="row">
             <div class="col-md-9">
-                <input type="text" name="" value="" placeholder="Nouvelle tâche" class="form-control"id="text">
+                <input type="text" name="" value="" placeholder="Nouvelle tâche" class="form-control" id="text">
             </div>
             <div class="col-md-3">
                 <button type="button" name="button" class="btn-block" id="add">Ajouter</button>
@@ -32,7 +34,7 @@
             <div class="col-md-4" id="middle">
                 <img src="static/img/triangle.png" id="first" alt="">
                 <h2>En cours</h2>
-                <div class="timer" data-seconds-left=5></div>
+                <span id="clock"></span>
                 <button type="button" name="button" class="btn-lg" id="start">Début</button>
                 <button type="button" name="button" class="btn-lg" id="pause">Pause</button>
                 <ul id="encours">
@@ -47,10 +49,10 @@
             </div>
         </div>
     </div>
-<script src="static/external/jquery/dist/jquery.min.js"></script>
-<script src="static/external/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-<script src="static/external/jQuery-Simple-Timer/jquery.simple.timer.js">
-</script>
-<script src="static/js/script.js"></script>
+    <script src="static/external/jquery/dist/jquery.min.js"></script>
+    <script src="static/external/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="static/external/jquery.countdown/dist/jquery.countdown.js"></script>
+    <script src="static/js/script.js"></script>
 </body>
+
 </html>

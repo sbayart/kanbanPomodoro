@@ -69,7 +69,8 @@ h1 {
     /*align-items: center;*/
     /*flex-wrap: nowrap;*/
 /*}*/
-.timer, .timer-done, .timer-loop {
+#getting-started,
+#clock {
     display: flex;
     font-size: 30px;
     color: black;
@@ -82,24 +83,6 @@ h1 {
     margin: 1em 1.9em;
  }
 
- /*// These are the default CSS classes
- // used by this plugin. Use these values
- // for a basic style to get started.*/
- .jst-hours {
-   float: left;
- }
- .jst-minutes {
-   float: left;
- }
- .jst-seconds {
-   float: left;
- }
- .jst-clearDiv {
-   clear: both;
- }
- .jst-timeout {
-   color: red;
- }
 #middle button {
     margin: 2em;
     border: 2px solid black;
