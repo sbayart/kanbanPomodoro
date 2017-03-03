@@ -10,22 +10,39 @@ $(document).ready(function() {
             $(this).parent().remove();
         })
         monli.click(function() {
-            $("#encours").append($(this))
+            if ($("#encours").text() == "") {
+                $("#encours").append($(this).text())
+                $(this).remove();
+            }
         });
     })
-                $('#clock').countdown('2017/03/04 00:00:05', function(event) {
-            $(this).html(event.strftime(' %H:%M:%S'));
-            });
-
-                //     var travail = confirm("Avez-vous fini ?");
-                //     if (travail == true) {
-                //         $("#fait").append(monli);
-                //         $(".timer").resetTimer(element);
-                //     } else {
-                //         $('.timer').startTimer(element);
-                //     }
-                // })
-            $("#pause").click(function(){
-
+    $("#start").click(function() {
+        if ($("#encours").text() != "") {
+            $("#hms_timer").countdowntimer({
+                minutes: 00,
+                seconds: 05,
+                size: "lg",
+                pauseButton: "pauseBtnhms",
+                stopButton: "stopBtnhms",
+                timeUp: timeisUp
             })
+        };
+
+        function timeisUp() {
+            var travail = confirm("Avez-vous fini ?");
+            if (travail == true) {
+                $("#fait").append("<li>" + $("#encours").text() + "</li>");
+                $("#encours").text("");
+            } else {
+                $("#hms_timer").countdowntimer({
+                    minutes: 00,
+                    seconds: 05,
+                    size: "lg",
+                    pauseButton: "pauseBtnhms",
+                    stopButton: "stopBtnhms",
+                    timeUp: timeisUp
+                })
+            }
+        }
+    });
 });

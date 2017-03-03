@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="static/external/bootstrap/dist/css/bootstrap-theme.min.css.map" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/external/jquery-countdownTimer/CSS/jquery.countdownTimer.css">
     <link href="static/css/style.css" rel="stylesheet">
 
 </head>
@@ -28,18 +29,15 @@
             <div class="col-md-4">
                 <h2>A faire</h2>
                 <ul id="todo">
-
                 </ul>
             </div>
             <div class="col-md-4" id="middle">
                 <img src="static/img/triangle.png" id="first" alt="">
                 <h2>En cours</h2>
-                <span id="clock"></span>
+                <h3 id="encours"></h3>
+                <div id="hms_timer"><span id="future_date"><span></div>
                 <button type="button" name="button" class="btn-lg" id="start">Début</button>
-                <button type="button" name="button" class="btn-lg" id="pause">Pause</button>
-                <ul id="encours">
-
-                </ul>
+                <button type="button" name="button" class="btn-lg" id="pauseBtnhms">Pause</button>
             </div>
             <div class="col-md-4">
                 <img src="static/img/triangle.png" id="second" alt="">
@@ -51,7 +49,7 @@
     </div>
     <script src="static/external/jquery/dist/jquery.min.js"></script>
     <script src="static/external/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="static/external/jquery.countdown/dist/jquery.countdown.js"></script>
+    <script src="static/external/jquery-countdownTimer/jquery.countdownTimer.min.js"></script>
     <script src="static/js/script.js"></script>
 </body>
 
