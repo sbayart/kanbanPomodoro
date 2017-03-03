@@ -10,17 +10,23 @@ $(document).ready(function() {
         })
         $(monli).click(function() {
             $("#encours").append(monli)
-            $('.timer').startTimer()
-            if (".timer" == '.timer-done') {
-                alert("yolo")
-            }
-            console.log($(".timer"));
+        });
+        $("#start").click(function() {
+            $('.timer').startTimer({
+                onComplete: function(element){
+                    element.addClass('is-complete');
+                    var travail = confirm("Avez-vous fini ?");
+                        if (travail == true) {
+                            $("#fait").append(monli);
+                            $(".timer").resetTimer(element);
+                        } else {
+                            $('.timer').startTimer(element);
+                        }
+                }
+            })
+            $("#pause").click(function(){
+
+            })
         })
     });
-
-
-    function onComplete() {
-        $(".timer").addClass('timer-done');
-
-    }
 })
