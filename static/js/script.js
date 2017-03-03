@@ -27,7 +27,6 @@ $(document).ready(function() {
                 timeUp: timeisUp
             })
         };
-
         function timeisUp() {
             var travail = confirm("Avez-vous fini ?");
             if (travail == true) {
@@ -35,6 +34,7 @@ $(document).ready(function() {
                 $("#encours").text("");
             } else {
                 $("#hms_timer").countdowntimer({
+                    currentTime : true,
                     minutes: 00,
                     seconds: 05,
                     size: "lg",
@@ -43,6 +43,7 @@ $(document).ready(function() {
                     timeUp: timeisUp
                 })
             }
+
         }
     });
 });

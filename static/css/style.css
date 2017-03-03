@@ -32,12 +32,8 @@ h1 {
     border-bottom-right-radius: 1em;
     border-bottom-left-radius: 1em;
     height: 100vh;
-}
-.col-md-4:not(h2){
     border: 2px solid black;
-
 }
-
 .col-md-4 h2 {
     border-bottom: 2px solid black;
     width: 100%;
@@ -63,12 +59,6 @@ h1 {
     margin-left: 10em;
     cursor: pointer;
 }
-/*#middle:not(.timer) {
-    /*display: flex;
-    flex-direction: column;*/
-    /*align-items: center;*/
-    /*flex-wrap: nowrap;*/
-/*}*/
 #hms_timer {
     display: flex;
     font-size: 30px;
@@ -80,6 +70,9 @@ h1 {
     border-radius: 0.5em;
     width: 70%;
     margin: 1em 1.9em;
+    background-color: black;
+    font-family: sans-serif;
+    
  }
 h3 {
     text-align: center;
